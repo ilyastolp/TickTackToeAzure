@@ -160,6 +160,8 @@ class CellPriority {
     }
 }
 function makeMove(doc, btn) {
+    if (gameOver)
+        return;
     moves++;
     if (firstMove) {
         setStatus(doc, "");
