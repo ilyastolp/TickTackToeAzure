@@ -210,9 +210,6 @@ function makeMove(doc, btn) {
         setStatus(doc, "")
         firstMove = false;
     }
-    //btn.textContent
-    //if (btn.textContent != "" || gameOver)
-    //    return;
     let moveStr = ""
 
     // Add marked cell to the line sets.
