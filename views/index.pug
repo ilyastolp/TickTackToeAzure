@@ -1,0 +1,23 @@
+﻿extends layout
+
+block content
+  script(src="/javascripts/game.js")
+  p.div.title(id="board")
+    h1= title
+  p.div.status
+    label.lb.status(id='status' type='largeText')="Press 'New Game X' or 'New Game 0'"
+
+  P.div.board
+        button.btn.btn-primary(type='cell' id="a0" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="a1" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="a2" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="b0" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="b1" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="b2" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="c0" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="c1" onclick="makeMove(document, this)")
+        button.btn.btn-primary(type='cell' id="c2" onclick="makeMove(document, this)")
+  div
+  P.div.menu
+        button.btn.btn-menu(type='button' id="mX" onclick="newGame(document, this)")="New Game X"
+        button.btn.btn-menu(type='button' id="m0" onclick="newGame(document, this)")="New Game 0"
